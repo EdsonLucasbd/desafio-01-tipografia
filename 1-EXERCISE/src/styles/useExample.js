@@ -3,17 +3,27 @@ import { theme } from './theme';
 
 export const Container = styled.div`
   background: ${props => props.background ? `var(--${props.background})` : 'var(--light-solid)'};
-  display: flex;
+  /* display: flex;
   flex-direction: column;
   width: 100vw;
   height: 100vh;
-  border: 0;
+  border: 0; */
   padding: 0;
-  outline: 0;
+  /* outline: 0;
   box-sizing: border-box;
   margin: 0;
   align-items: center;
-  justify-content: center;
+  justify-content: center; */
+`
+
+export const Main = styled.div`
+  min-height: 100vh;
+  padding: 4rem 1rem;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
 `
 
 export const Separator = styled.hr`
@@ -71,8 +81,8 @@ export const OptionsContainer = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  align-items: center;
-  width: 10%;
+  align-items: flex-start;
+  margin-bottom: 1rem;
 `
 export const OptionsGroup = styled.div`
   display: flex;
@@ -80,31 +90,31 @@ export const OptionsGroup = styled.div`
   justify-content: left;
   align-items: center;
   width: 100%;
+`
 
-  input {
-    appearance: none;
-    cursor: pointer;
-    width: 16px;
-    height: 16px;
-    margin-right: 5px;
-    border: 1px solid var(--dark-high);
-    border-radius: 50%;
-    position: relative;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    outline: none;
-  }
+export const StyledRadio = styled.input`
+  appearance: none;
+  cursor: pointer;
+  width: 16px;
+  height: 16px;
+  margin-right: 5px;
+  border: 1px solid var(--dark-high);
+  border-radius: 50%;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  outline: none;
   
-  label {
+  & + label {
     ${theme.typography.sizes.subHeading}
     font-family: ${theme.typography.typeface.primary};
     color: var(--dark-high);
     cursor: pointer;
   }
 
-  input::before {
+  &::before {
     content: '';
     width: 8px;
     height: 8px;
@@ -115,11 +125,25 @@ export const OptionsGroup = styled.div`
     position: absolute;
   }
 
-  input:checked::before {
+  &:checked::before {
     opacity: 1;
   }
 
-  input:focus {
+  &:focus {
     box-shadow: 0 0 4px var(--magenta);
+  }
+`
+
+export const DemoPhraseInput = styled.input`
+  padding: 3px;
+  margin-top: 1rem;
+  outline: none;
+  transition: all 0.1s ease-in-out;
+  caret-color: var(--magenta);
+
+  &:focus {
+    border: 2px solid var(--magenta);
+    box-shadow: 0 0 4px var(--magenta);
+    border-radius: 4px;
   }
 `
