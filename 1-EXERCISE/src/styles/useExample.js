@@ -3,17 +3,7 @@ import { theme } from './theme';
 
 export const Container = styled.div`
   background: ${props => props.background ? `var(--${props.background})` : 'var(--light-solid)'};
-  /* display: flex;
-  flex-direction: column;
-  width: 100vw;
-  height: 100vh;
-  border: 0; */
   padding: 0;
-  /* outline: 0;
-  box-sizing: border-box;
-  margin: 0;
-  align-items: center;
-  justify-content: center; */
 `
 
 export const Main = styled.div`
@@ -45,7 +35,7 @@ export const StyledButton = styled.button`
   padding: 16px;
   font-size: 16px;
   cursor: pointer;
-  color: ${props => props.textColor ? `var(--${props.textColor})` : '#000'};
+  color: ${props => props.textColor ? `var(--${props.textColor})` : 'var(--dark-high)'};
   background: ${props => props.background ? `var(--${props.background})` : '#c1c1c1'};
   transition: all 0.3s ease-in-out;
 
