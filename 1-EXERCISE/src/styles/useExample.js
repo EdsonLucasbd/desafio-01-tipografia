@@ -18,9 +18,9 @@ export const Main = styled.div`
 
 export const Separator = styled.hr`
   width: 50vw;
-  margin: 20px 0;
-  border: 1px solid ${props => props.color ? `var(--${props.color})` : 'var(--light-high)'};
-  border-radius: 2px;
+  margin: 1.25rem 0;
+  border: 0.063rem solid ${props => props.color ? `var(--${props.color})` : 'var(--light-high)'};
+  border-radius: 0.125rem;
 `
 
 export const Heading = styled.p`
@@ -31,9 +31,9 @@ export const Heading = styled.p`
 
 export const StyledButton = styled.button`
   border: none;
-  border-radius: 4px;
-  padding: 16px;
-  font-size: 16px;
+  border-radius: 0.25rem;
+  padding: 1rem;
+  font-size: 1rem;
   cursor: pointer;
   color: ${props => props.textColor ? `var(--${props.textColor})` : 'var(--dark-high)'};
   background: ${props => props.background ? `var(--${props.background})` : '#c1c1c1'};
@@ -52,7 +52,7 @@ export const Footer = styled.footer`
   justify-content: center;
   align-items: center;
   padding: 2rem 0;
-  box-shadow: 0px -3px 15px -8px #000000;
+  box-shadow: 0 -0.188rem 0.938rem -0.5rem #000000;
   color: var(--magenta);
 
   a {
@@ -85,10 +85,10 @@ export const OptionsGroup = styled.div`
 export const StyledRadio = styled.input`
   appearance: none;
   cursor: pointer;
-  width: 16px;
-  height: 16px;
-  margin-right: 5px;
-  border: 1px solid var(--dark-high);
+  width: 1rem;
+  height: 1rem;
+  margin-right: 0.313;
+  border: 0.063rem solid var(--dark-high);
   border-radius: 50%;
   position: relative;
   display: flex;
@@ -106,8 +106,8 @@ export const StyledRadio = styled.input`
 
   &::before {
     content: '';
-    width: 8px;
-    height: 8px;
+    width: 0.5rem;
+    height: 0.5rem;
     border-radius: 50%;
     background: var(--magenta);
     opacity: 0;
@@ -120,20 +120,20 @@ export const StyledRadio = styled.input`
   }
 
   &:focus {
-    box-shadow: 0 0 4px var(--magenta);
+    box-shadow: 0 0 0.25rem var(--magenta);
   }
 `
 
 export const DemoPhraseInput = styled.input`
-  padding: 3px;
+  padding: 0.188rem;
   margin-top: 1rem;
   outline: none;
   transition: all 0.1s ease-in-out;
   caret-color: var(--magenta);
 
   &:focus {
-    border: 2px solid var(--magenta);
-    box-shadow: 0 0 4px var(--magenta);
-    border-radius: 4px;
+    border: 0.125rem solid var(--magenta);
+    box-shadow: 0 0 0.25rem var(--magenta);
+    border-radius: 0.25rem;
   }
 `
