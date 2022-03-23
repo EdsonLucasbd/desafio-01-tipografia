@@ -6,6 +6,7 @@ export default function HomePage() {
   const [typography, setTypography] = useState('display')
   const [demoText, setDemoText] = useState('Olá, Serasa!')
   const [color, setColor] = useState('magenta')
+  const [textBackGround, setTextBackGround] = useState('')
 
   function handleTypographyChange(event) {
     setTypography(event.target.value)
@@ -17,6 +18,10 @@ export default function HomePage() {
 
   function handleColorChange(event) {
     setColor(event.target.value)
+    if(event.target.value === 'light-high' || 
+      event.target.value === 'light-solid') {
+      setTextBackGround('dark-high')
+    } else setTextBackGround('');
   }
 
   return (
@@ -183,7 +188,7 @@ export default function HomePage() {
           />
         </OptionsContainer>
         <Separator color='magenta' />
-        <Heading type={typography} color={color}>{demoText}</Heading>
+        <Heading type={typography} color={color} backGround={textBackGround}>{demoText}</Heading>
       </Main>
       <Footer>
         Powered with ❤️ by{' '} <a

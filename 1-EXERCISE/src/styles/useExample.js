@@ -27,6 +27,7 @@ export const Heading = styled.p`
   ${props => props.type && `${theme.typography.sizes[props.type]}`}
   font-family: ${theme.typography.typeface.primary};
   color: ${props => props.color ? `var(--${props.color})` : 'var(--light-solid)'};
+  background-color: ${props => props.backGround ? `var(--${props.backGround})` : 'transparent'};
 `
 
 export const StyledButton = styled.button`
