@@ -16,7 +16,7 @@ export const theme = {
   
   typography: {
     typeface: {
-      primary: '"Roboto"',
+      primary: 'Roboto',
     },
     weight: {
       bold: 700,
@@ -26,66 +26,66 @@ export const theme = {
       display: css`
         font-size: 3rem;
         font-weight: 700;
-        line-height: 52px;
-        letter-spacing: -1.2px;
+        line-height: 3.25rem;
+        letter-spacing: -0.075rem;
 
         @media(max-width: 760px) {
           font-size: 2.5rem;
-          line-height: 44px;
+          line-height: 2.75rem;
         }
       `,
       headingL: css`
         font-size: 2.5rem;
         font-weight: 700;
-        line-height: 44px;
-        letter-spacing: -1px;
+        line-height: 2.75rem;
+        letter-spacing: -0.063rem;
 
         @media(max-width: 760px) {
           font-size: 2rem;
-          line-height: 36px;
+          line-height: 2.25rem;
         }
       `,
       headingM: css`
         font-size: 2rem;
         font-weight: 700;
-        line-height: 36px;
-        letter-spacing: -0.8px;
+        line-height: 2.25rem;
+        letter-spacing: -0.05rem;
 
         @media(max-width: 760px) {
           font-size: 1.5rem;
-          line-height: 28px;
+          line-height: 1.75rem;
         }
       `,
       headingS: css`
         font-size: 1.5rem;
         font-weight: 700;
-        line-height: 28px;
-        letter-spacing: -0.6px;
+        line-height: 1.75rem;
+        letter-spacing: -0.038rem;
 
         @media(max-width: 760px) {
           font-size: 1.25rem;
-          line-height: 24px;
+          line-height: 1.5rem;
         }
       `,
       headingXS: css`
         font-size: 1.5rem;
         font-weight: 700;
-        line-height: 24px;
+        line-height: 1.5rem;
 
         @media(max-width: 760px) {
           font-size: 1.125rem;
-          line-height: 22px;
+          line-height: 1.375rem;
         }
       `,
       subHeading: css`
         font-size: 1rem;
         font-weight: 700;
-        line-height: 20px;
+        line-height: 1.25rem;
       `,
       bodyM: css`
         font-size: 1rem;
         font-weight: 400;
-        line-height: 24px;
+        line-height: 1.5rem;
     `,
     }
   },
